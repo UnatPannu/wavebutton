@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                height:100vh;
+                display:grid;
+                place-items:center;
+                font-family:"Montserrat"
+            }
+            .button-wrapper{
+                position:relative;
+            }
+        button{
+            height:150px;
+            width:500px;
+            background-color:rgb(162, 183, 234);
+            border: solid rgb(162, 183, 234) 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+            position:relative;
+        }
+        .text{
+            font-size:50px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        button:hover .wave{
+            top:50%;
+        }
+        @keyframes wave{
+            from {
+                background-position-x:0;
+            }
+            to{
+                background-position-x:200%;
+            }
+        }
+        .border-top{
+            position:absolute;
+            top:-35px;
+            left:0;
+            font-size:14px;
+            font-weight:600;
+            width:100%;
+            white-space: nowrap;
+        }
+        .border-bottom{
+            position:absolute;
+            top:140px;
+            left:0;
+            font-size:14px;
+            font-weight:600;
+            transform: rotate(180deg);
+            white-space: nowrap;
+        }
+        .border-right{
+            position:absolute;
+            top:55px;
+            left:435px;
+            font-size:14px;
+            font-weight:600;
+            transform: rotate(90deg);
+            white-space: nowrap;
+        }
+        .border-left{
+            position:absolute;
+            top:55px;
+            left:-95px;
+            font-size:14px;
+            font-weight:600;
+            transform: rotate(270deg);
+            white-space: nowrap;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="button-wrapper">
+        <p class="border-top">Human-Centered. Radically Different. Authentic. Human-Centered. Ra</p>
+        <p class="border-left">red. Radically Different</p>
+        <p class="border-right">dically Different. Auth</p>
+        <button>
+            <div class="text">SEND CV</div>
+            <div class="wave"></div>
+        </button>
+        <p class="border-bottom">entic. Human-Centered. Radically Different. Authentic. Human-Cente</p>
+    </div>
+    </body>
+</html>

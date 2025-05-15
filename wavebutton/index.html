@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                height:100vh;
+                place-items:center;
+                background-color: white;
+                flex-wrap: wrap;
+                place-content: center;
+                width: 50%;
+                display:flex;
+                gap:50px;
+                align-items:center;
+                margin:auto;
+                font-family:'Montserrat';
+            }
+            h1{
+                width:100%;
+                text-align:center;
+                font-size:3em;
+            }
+            .button-1{
+            height:50px;
+            width:200px;
+            background-color:white;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+            border-radius:5px;
+        }
+        .text-1{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave-1{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:url(darkest-blue-wave.svg);
+            background-size:300% 200%;
+            top:100%;
+            left:0;
+            animation: wave-1 4.5s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-1:hover .wave-1{
+            top:0%;
+        }
+        .button-1:hover .text-1{
+            color: white;
+        }
+
+        @keyframes wave-1{
+            from {
+                background-position-x:0;
+            }
+            to{
+                background-position-x:300%;
+            }
+        }
+        .button-2{
+            height:50px;
+            width:200px;
+            background-color:black;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .text-2{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:white;
+            transition:0.5s;
+        }
+        .wave-2{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave-2 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-2:hover .wave-2{
+            top:50%;
+        }
+        .button-2:hover .text-2{
+            color: rgb(162, 183, 234);
+        }
+        .button-2:hover{
+            box-shadow:6px 6px 0 black;
+        }
+
+        @keyframes wave-2{
+            from {
+                background-position-x:0;
+            }
+            to{
+                background-position-x:200%;
+            }
+        }
+
+        .button-3{
+            height:50px;
+            width:200px;
+            background-color:black;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .text-3{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:white;
+            transition:0.5s;
+        }
+        .wave-3{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave-2 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-3:hover .wave-3{
+            top:50%;
+        }
+        .button-3:hover .text-3{
+            color: rgb(162, 183, 234);
+        }
+
+        .button-4{
+            height:50px;
+            width:200px;
+            background-color:white;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+            border-radius:5px;
+        }
+        .text-4{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave-4{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:url(purple-wave.svg);
+            background-size:300% 200%;
+            top:100%;
+            left:0;
+            animation: wave-1 4.5s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-4:hover .wave-4{
+            top:0%;
+        }
+
+        .button-5{
+            height:50px;
+            width:200px;
+            background-color:white;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+            border-radius:5px;
+        }
+        .text-5{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave-5{
+            position:absolute;
+            width:100%;
+            height:100%;
+            background:url(darkest-blue-wave.svg);
+            background-size:300% 200%;
+            top:100%;
+            left:0;
+            animation: wave-1 4.5s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-5:hover .wave-5{
+            top:0%;
+        }
+        .button-5:hover .text-5{
+            color:rgb(162, 183, 234);
+        }
+
+        .button-6{
+            height:50px;
+            width:200px;
+            background-color:black;
+            border: solid black 2px;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .text-6{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:white;
+            transition:0.5s;
+        }
+        .wave-6{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave-2 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-6:hover .wave-6{
+            top:50%;
+        }
+        .button-6:hover .text-6{
+            color: rgb(162, 183, 234);
+        }
+        .button-6:hover{
+            box-shadow:6px 6px 0 rgb(162, 183, 234);
+        }
+
+        .button-7{
+            height:50px;
+            width:200px;
+            background-color:rgb(162, 183, 234);
+            border: none;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .text-7{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave-7{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave-2 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-7:hover .wave-7{
+            top:50%;
+        }
+        .button-7:hover{
+            box-shadow:6px 6px 0 rgb(108, 123, 160);
+            border: solid rgb(162, 183, 234) 2px;
+        }
+        .button-8{
+            height:50px;
+            width:200px;
+            background-color:rgb(162, 183, 234);
+            border: none;
+            position:relative;
+            overflow:hidden;
+            transition:0.3s;
+        }
+        .text-8{
+            font-size:18px;
+            z-index:1;
+            position:relative;
+            color:black;
+            transition:0.5s;
+        }
+        .wave-8{
+            position:absolute;
+            width:100%;
+            height:50%;
+            background:url(https://raw.githubusercontent.com/SnippetsDevelop/snippetsdevelop.github.io/6b0d45025ed35d5f6ead99b6eeea22ed4e98eb24/images/wave.svg);
+            background-size:200% 100%;
+            top:100%;
+            left:0;
+            animation: wave-2 2s linear infinite;
+            z-index:0;
+            transition:0.5s;
+        }
+        .button-8:hover .wave-8{
+            top:50%;
+        }
+        .button-8:hover{
+            border: solid rgb(162, 183, 234) 2px;
+        }
+        </style>
+    </head>
+    <body>
+       <h1>Button Variations</h1>
+        <button class="button-2">
+            <div class="text-2">Send CV</div>
+            <div class="wave-2"></div>
+        </button>
+        <button class="button-6">
+            <div class="text-6">Send CV</div>
+            <div class="wave-6"></div>
+        </button>
+        <a  href="trying.html">
+            <button class="button-3">
+            <div class="text-3">Send CV</div>
+            <div class="wave-3"></div>
+            </button>
+        </a>
+        <button class="button-5">
+            <div class="text-5">Send CV</div>
+            <div class="wave-5"></div>
+        </button>
+        <a  href="var1.html"><button class="button-4">
+            <div class="text-4">Send CV</div>
+            <div class="wave-4"></div>
+        </button></a>
+        <button class="button-1">
+            <div class="text-1">Send CV</div>
+            <div class="wave-1"></div>
+        </button>
+        <a href="trying2.html"><button class="button-7">
+            <div class="text-7">Send CV</div>
+            <div class="wave-7"></div>
+        </button></a>
+        <a href="trying2.html"><button class="button-8">
+            <div class="text-8">Send CV</div>
+            <div class="wave-8"></div>
+        </button></a>
+    </body>
+</html>
